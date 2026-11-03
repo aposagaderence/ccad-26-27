@@ -28,8 +28,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('baggage-items', BaggageItemController::class)
         ->only(['index', 'create', 'store', 'update']);
 
-    Route::resource('screening-logs', ScreeningLogController::class)
-        ->only(['Index', 'Create', 'store', 'update']);
+    Route::resource('screenging-logs', ScreeningLogController::class)
+        ->only(['Index', 'Create', 'store', 'Update']);
 });
 
 // Authentication Routes (Login, Register, Logout, Password Reset)
