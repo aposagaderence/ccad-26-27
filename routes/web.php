@@ -29,7 +29,7 @@ Route::middleware(['auth'])->group(function () {
         ->only(['index', 'create', 'store', 'update']);
 
     Route::resource('screening-logs', ScreeningLogController::class)
-        ->only(['Index', 'create', 'store', 'update']);
+        ->only(['Index', 'Create', 'store', 'update']);
 });
 
 // Authentication Routes (Login, Register, Logout, Password Reset)
